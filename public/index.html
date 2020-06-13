@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+  
+   
+</head>
+<body>
+    
+    
+    <div class="grid two-column">
+        
+        
+        <div class="chat-section">
+            <div id="chat">
+               
+            </div>   
+            <div id="setup">
+                <input id="name" type="text" placeholder="Name" />
+                <input id="message" type="text" placeholder="message" />
+                <button id="button">click me</button>
+            </div>
+        </div>
+    
+    
+    
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

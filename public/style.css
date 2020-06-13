@@ -1,0 +1,17 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#chat{
+    width: 20rem;
+    height: 40rem;
+    border: solid black 2px;
+    overflow: auto;
+}
+
+#name{
+    display: block;
+    
+}
+
