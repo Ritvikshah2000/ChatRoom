@@ -48,4 +48,13 @@ body{
     outline: none;
 }
 
+iframe{
+    background-color:  #f7f7f7;
+    margin-top: 2rem;
+    border: solid #e8e8e8 1.5px;
+    width: 64rem;
+    height: 36rem;
+    
+}
+
 
