@@ -16,6 +16,7 @@ app.use(express.static("public"));
 var io= socket(server);
 
 io.on("connection", function(socket){
+    //says twice figure out
     console.log("connected");
 
     //listen for data from a socket

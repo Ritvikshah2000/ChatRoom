@@ -3,15 +3,49 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f0f0f0;
+}
+
+
+#message-area{
+    margin-top: 0.5rem;
+}
+
 #chat{
     width: 20rem;
     height: 40rem;
-    border: solid black 2px;
+    background-color: #f7f7f7;
+    border: solid #e8e8e8 1.5px;
     overflow: auto;
 }
 
-#name{
-    display: block;
+#message{
+    border: solid #e8e8e8 1.5px;
+    width: 14.75rem;
+    height: 1.75rem;
+    overflow: visible;
+}
+#message:focus, #message:hover{
+    border: solid #c7c7ce 2px;
+    outline:none;
+    
     
 }
+
+#send{
+    background-color: #8c95ca;
+    color: #f0f0f0;;
+    border: none;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: medium;
+    
+ }
+
+ #send:focus, #send:hover{
+    border: solid #5c69b6 2px;
+    outline: none;
+}
+
 
