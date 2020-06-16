@@ -25,4 +25,10 @@ io.on("connection", function(socket){
         //send data to all sockets
         io.emit("chat", data);
     });
+
+    socket.on("draw", function(data){
+        //send to all sockets except the one that sent the data
+        socket.broadcast.emit("draw", data);
+    })
+
 })
