@@ -26,10 +26,14 @@ function draw(e) {
     context.lineWidth = lineWidth;
     context.lineCap = lineCap;
 
-    context.lineTo(e.clientX, e.clientY);
+    var rect = this.getBoundingClientRect();
+    var left = e.clientX - rect.left - this.clientLeft + this.scrollLeft;
+    var top = e.clientY - rect.top - this.clientTop + this.scrollTop;
+
+    context.lineTo(left, top);
     context.stroke();
     context.beginPath();
-    context.moveTo(e.clientX, e.clientY)
+    context.moveTo(left, top)
 }
 
 canvas.addEventListener("mousedown", startPosition)
