@@ -16,9 +16,6 @@
 }
 
 #canvas{
-    width: 20rem;
-    height: 40rem;
     border: solid black 2px;
-    overflow: auto;
 }
 
