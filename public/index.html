@@ -18,19 +18,36 @@
     
     <div class="grid two-column">
         <div id="video">
-            <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="grid four-column">
+                <button id="send">action</button>
+                <button id="send">action</button>
+                <button id="send">action</button>
+                <button id="send">action</button>
+            </div>
+            
+            <div id="iframe-container">          
+                <iframe id="test" src="https://www.youtube.com/embed/6ajHZWDP_Vk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             
         </div>
         
         <div class="chat-section">
-            <div id="chat">
+            
+            <div id="chat-container">
+                <div id="chat">
                
-            </div>   
-            <div id="message-area">
-                
-                <input id="message" type="text" placeholder="message" />
-                <button id="send">send</button>
-                <!-- <input id="name" type="text" placeholder="Name" /> -->
+                </div>   
+            
+            </div>
+           
+            <div id="message-area-container">
+                <div id="message-area">
+                    
+                    <input id="message" type="text" placeholder="message" />
+                    <button id="send">send</button>
+                    <!-- <input id="name" type="text" placeholder="Name" /> -->
+                </div>
             </div>
 
         </div>
