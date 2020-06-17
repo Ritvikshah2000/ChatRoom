@@ -3,13 +3,14 @@
 var socket= io.connect("http://localhost:4000");
 
 var text= document.getElementById("text");
-var btn= document.getElementById("button");
+var btn= document.getElementById("send");
 var message= document.getElementById("message");
 var user = document.getElementById("name");
 
 
 btn.addEventListener("click", function(){
     //send socket data to server
+    console.log("send");
     socket.emit("chat", {
         message: message.value,
         name: user.value
